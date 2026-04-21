@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazi — Reserva limpieza para hogar y oficina en minutos</title>
+  <meta
+    name="description"
+    content="Reserva limpieza para tu hogar u oficina en minutos. Fazi conecta personas y empresas con servicios de limpieza rápidos, confiables y fáciles de agendar desde el celular."
+  >
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fazico.com/">
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fazico.com/">
+  <meta property="og:title" content="Fazi — Reserva limpieza para hogar y oficina en minutos">
+  <meta property="og:description" content="Reserva limpieza para tu hogar u oficina en minutos. Sin llamadas, sin estrés. Elige servicio, horario y confirma desde una sola app.">
+  <meta property="og:image" content="https://fazico.com/og-image.png">
+  <meta property="og:locale" content="es_CO">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fazi — Reserva limpieza en minutos">
+  <meta name="twitter:description" content="Conectamos hogares y oficinas con servicios de limpieza rápidos y confiables.">
+  <meta name="twitter:image" content="https://fazico.com/og-image.png">
+
+  <meta name="theme-color" content="#1c5fd4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-XXXXXXXXXX");
+  </script>
+
+  <style>
+    :root {
+      --blue-900: #1c5fd4;
+      --blue-700: #2d7ff9;
+      --blue-500: #53b4ff;
+      --ink: #1b1f27;
+      --muted: #677486;
+      --surface: #f5f7fa;
+      --surface-2: #edf4fb;
+      --card: #ffffff;
+      --line: rgba(27, 31, 39, 0.08);
+      --success: #3ccb7f;
+      --shadow-lg: 0 30px 70px rgba(19, 45, 86, 0.14);
+      --shadow-md: 0 18px 40px rgba(19, 45, 86, 0.1);
+      --radius-xl: 36px;
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --container: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(83, 180, 255, 0.28), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, #f5f7fa 22%, #eef3f9 100%);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0 10%;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 48%, var(--blue-500) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      filter: blur(10px);
+    }
+
+    .hero::before {
+      width: 360px;
+      height: 360px;
+      top: -160px;
+      right: -100px;
+    }
+
+    .hero::after {
+      width: 300px;
+      height: 300px;
+      bottom: -140px;
+      left: -80px;
+    }
+
+    nav {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 34px;
+    
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      border: 3px solid white;
+      border-radius: 50%;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .logo-icon::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 6px;
+      border-left: 3px solid white;
+      border-bottom: 3px solid white;
+      transform: rotate(-45deg);
+      left: 12px;
+      top: 13px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: rgba(255, 255, 255, 0.9);
+      font-weight: 500;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+      gap: 44px;
+      align-items: center;
+      padding: 22px 34px 36px;
+    }
+
+    .hero-copy {
+      color: white;
+      padding: 24px 0 30px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      color: white;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-copy h1 {
+      font-size: clamp(3rem, 6vw, 5.2rem);
+      line-height: 0.98;
+      letter-spacing: -0.06em;
+      max-width: 10ch;
+      margin-bottom: 22px;
+    }
+
+    .hero-copy p {
+      max-width: 620px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.16rem;
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+
+    .hero-point {
+      padding: 11px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      color: white;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-inline {
+      border: none;
+      cursor: pointer;
+      transition: transform 100ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn-inline:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: white;
+      color: var(--blue-700);
+      padding: 16px 26px;
+      border-radius: 18px;
+      font-weight: 800;
+      box-shadow: 0 20px 40px rgba(7, 25, 54, 0.16);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      padding: 16px 24px;
+      border-radius: 18px;
+      font-weight: 700;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-note {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 0.9rem;
+    }
+
+    .phone-cluster {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      min-height: 720px;
+      cursor: none;
+    }
+
+    .cursor-ring {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      backdrop-filter: blur(12px);
+      pointer-events: none;
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0;
+      transition: opacity 160ms ease, transform 160ms ease;
+      z-index: 3;
+      box-shadow: 0 18px 36px rgba(14, 38, 71, 0.16);
+    }
+
+    .cursor-ring.is-visible {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .float-card {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: white;
+      border-radius: 24px;
+      padding: 16px 18px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(14, 38, 71, 0.12);
+    }
+
+    .float-card small {
+      display: block;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 6px;
+    }
+
+    .float-card strong {
+      display: block;
+      font-size: 1rem;
+    }
+
+    .float-top {
+      top: 64px;
+      left: 0;
+      width: 180px;
+      transform: rotate(-6deg);
+    }
+
+    .float-bottom {
+      right: 0;
+      bottom: 76px;
+      width: 190px;
+      transform: rotate(5deg);
+    }
+
+    .phone {
+      width: 340px;
+      height: 680px;
+      background: #111;
+      border-radius: 42px;
+      padding: 14px;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.35);
+      position: relative;
+      z-index: 1;
+    }
+
+    .phone.secondary {
+      position: absolute;
+      width: 286px;
+      height: 580px;
+      top: 102px;
+      right: 10px;
+      transform: rotate(8deg);
+      opacity: 0.92;
+      z-index: 0;
+    }
+
+    .phone-screen {
+      background: #f5f7fa;
+      border-radius: 30px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      padding: 24px;
+    }
+
+    .phone-screen.alt {
+      background: linear-gradient(180deg, #edf4fb 0%, #f8fbff 100%);
+      padding: 0;
+    }
+
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .app-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .app-header h3 {
+      font-size: 1.4rem;
+      line-height: 1.15;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
+      border-radius: 50%;
+    }
+
+    .search-bar {
+      background: white;
+      border-radius: 16px;
+      padding: 14px 16px;
+      color: #a8b0bd;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .service-box {
+      background: white;
+      border-radius: 22px;
+      padding: 18px;
+      min-height: 120px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .icon-circle {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .service-box h4 {
+      font-size: 0.95rem;
+      margin-top: 12px;
+    }
+
+    .service-box p {
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .next-booking {
+      background: linear-gradient(135deg, var(--blue-700), var(--blue-500));
+      border-radius: 24px;
+      padding: 20px;
+      color: white;
+    }
+
+    .next-booking small {
+      opacity: 0.8;
+    }
+
+    .detail-hero {
+      height: 228px;
+      background: linear-gradient(135deg, var(--blue-900), var(--blue-700), var(--blue-500));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .detail-hero::before {
+      content: "Limpieza";
+      font-size: 2rem;
+      font-weight: 800;
+      color: white;
+      letter-spacing: -0.04em;
+    }
+
+    .detail-content {
+      margin-top: -24px;
+      background: #f5f7fa;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      padding: 24px 20px 28px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(45, 127, 249, 0.12);
+      color: var(--blue-700);
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .detail-content h4 {
+      font-size: 1.6rem;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    .detail-copy {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .mini-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .mini-stat {
+      background: white;
+      border-radius: 18px;
+      padding: 14px 10px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+
+    .mini-stat span {
+      color: #7c8798;
+      font-size: 0.72rem;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .feature-item {
+      background: white;
+      border-radius: 18px;
+      padding: 14px 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+      color: var(--ink);
+      font-size: 0.88rem;
+    }
+
+    section {
+      padding: 92px 0;
+    }
+
+    .section-heading {
+      max-width: 780px;
+      margin: 0 auto 52px;
+      text-align: center;
+    }
+
+    .section-kicker {
+      display: inline-block;
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--blue-700);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      font-size: clamp(2.3rem, 4vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 1.06rem;
+    }
+
+    .stats-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .stat-chip {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 22px;
+      padding: 16px 18px;
+      color: white;
+    }
+
+    .stat-chip strong {
+      display: block;
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+
+    .stat-chip span {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.88rem;
+    }
+
+    .problem-grid,
+    .cards,
+    .steps-grid,
+    .metrics-grid {
+      display: grid;
+      gap: 22px;
+    }
+
+    .problem-grid,
+    .cards,
+    .metrics-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .steps-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card,
+    .problem-card,
+    .step-card,
+    .metric-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .problem-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    }
+
+    .card h3,
+    .problem-card h3,
+    .step-card h3,
+    .metric-card h3 {
+      margin: 18px 0 10px;
+      font-size: 1.25rem;
+      letter-spacing: -0.03em;
+    }
+
+    .card p,
+    .problem-card p,
+    .step-card p,
+    .metric-card p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .step-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(45, 127, 249, 0.12);
+      color: var(--blue-700);
+      font-weight: 800;
+    }
+
+    .cta-section {
+      padding-top: 20px;
+    }
+
+    .newsletter {
+      background: linear-gradient(135deg, var(--blue-900), var(--blue-700), var(--blue-500));
+      border-radius: 40px;
+      padding: 64px 38px;
+      text-align: center;
+      color: white;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter::before {
+      content: "";
+      position: absolute;
+      inset: auto auto -120px -120px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .newsletter h2 {
+      font-size: clamp(2.3rem, 4vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 14px;
+      position: relative;
+    }
+
+    .newsletter p {
+      max-width: 760px;
+      margin: 0 auto 26px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.75;
+      position: relative;
+    }
+
+    .newsletter-form {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .newsletter-form input {
+      width: min(360px, 100%);
+      padding: 18px 18px;
+      border-radius: 18px;
+      border: none;
+      font-size: 1rem;
+      color: var(--ink);
+      box-shadow: 0 16px 30px rgba(14, 38, 71, 0.14);
+    }
+
+    .newsletter-form input:focus {
+      outline: 3px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .btn-inline {
+      background: #ffffff;
+      color: var(--blue-700);
+      padding: 18px 24px;
+      border-radius: 18px;
+      font-weight: 800;
+      box-shadow: 0 16px 30px rgba(14, 38, 71, 0.14);
+    }
+
+    .microcopy {
+      position: relative;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .form-feedback {
+      margin-top: 16px;
+      font-weight: 700;
+      min-height: 24px;
+      position: relative;
+    }
+
+    .form-feedback.success {
+      color: #dfffe9;
+    }
+
+    .form-feedback.error {
+      color: #ffe3e3;
+    }
+
+    .analytics-note {
+      margin-top: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 34px 24px 46px;
+      color: #7a7a7a;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 1100px) {
+      .hero-content,
+      .problem-grid,
+      .cards,
+      .steps-grid,
+      .metrics-grid,
+      .stats-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        text-align: center;
+      }
+
+      .hero-copy h1,
+      .hero-copy p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-points,
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .phone-cluster {
+        min-height: 760px;
+      }
+
+      .float-top {
+        left: 24px;
+      }
+
+      .float-bottom {
+        right: 24px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        width: min(var(--container), calc(100% - 28px));
+      }
+
+      .hero {
+        border-radius: 30px;
+      }
+
+      nav,
+      .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .phone-cluster {
+        min-height: 600px;
+      }
+
+      .phone {
+        width: 300px;
+        height: 620px;
+      }
+
+      .phone.secondary,
+      .float-card {
+        display: none;
+      }
+
+      section {
+        padding: 76px 0;
+      }
+
+      .newsletter {
+        padding: 46px 20px;
+        border-radius: 28px;
+      }
+
+      .btn-primary,
+      .btn-secondary,
+      .btn-inline,
+      .newsletter-form input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-shell">
+    <section class="hero container">
+      <nav>
+        <a class="logo" href="#top" aria-label="Fazi">
+          <span class="logo-icon"></span>
+          <span>Fazi</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#problema">Problema</a>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#beta">Beta</a>
+        </div>
+      </nav>
+
+      <div class="hero-content" id="top">
+        <div class="hero-copy">
+          <h1>Limpieza reservada en minutos. Sin llamadas. Sin estrés.</h1>
+          <p>
+            Fazi conecta hogares y oficinas con servicios de limpieza rápidos, confiables y fáciles
+            de agendar. Elige el servicio, escoge horario y reserva desde una sola app.
+          </p>
+
+          <div class="hero-points">
+            <!-- <span class="hero-point">Reserva en minutos</span>
+            <span class="hero-point">Personal confiable</span>
+            <span class="hero-point">Horarios flexibles</span> -->
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn-primary" href="#beta" data-track-click="hero_primary_cta">Quiero probar Fazi</a>
+            <!-- <a class="btn-secondary" href="#como-funciona" data-track-click="hero_secondary_cta">Ver como funciona</a> -->
+          </div>
+
+          <!-- <p class="hero-note">
+            Deja tu correo para recibir acceso anticipado, novedades del lanzamiento y prioridad cuando abramos Fazi.
+          </p> -->
+
+          <!-- <div class="stats-strip">
+            <div class="stat-chip">
+              <strong>Hogar</strong>
+              <span>limpieza para apartamentos y casas</span>
+            </div>
+            <div class="stat-chip">
+              <strong>Oficina</strong>
+              <span>servicios para equipos y espacios pequenos</span>
+            </div>
+            <div class="stat-chip">
+              <strong>Express</strong>
+              <span>soluciones rapidas cuando necesitas ayuda ya</span>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="phone-cluster" aria-hidden="true">
+          <div class="cursor-ring" id="cursor-ring"></div>
+          <div class="float-card float-top">
+            <small>Hoy mismo</small>
+            <strong>Limpieza express para apartamento</strong>
+          </div>
+
+          <div class="phone secondary">
+            <div class="phone-screen alt">
+              <div class="detail-hero"></div>
+              <div class="detail-content">
+                <div class="badge">Disponible esta semana</div>
+                <h4>Limpieza hogar</h4>
+                <p class="detail-copy">
+                  Elige horario, revisa precio claro y confirma en pocos pasos.
+                </p>
+                <div class="mini-stats">
+                  <div class="mini-stat">
+                    <strong>2 h</strong>
+                    <span>promedio</span>
+                  </div>
+                  <div class="mini-stat">
+                    <strong>Desde</strong>
+                    <span>$</span>
+                  </div>
+                  <div class="mini-stat">
+                    <strong>4.9</strong>
+                    <span>valoracion</span>
+                  </div>
+                </div>
+                <div class="feature-list">
+                  <div class="feature-item">Seleccion de fecha y hora</div>
+                  <div class="feature-item">Personal verificado</div>
+                  <div class="feature-item">Seguimiento del servicio</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="status-bar">
+                <span>9:41</span>
+                <span>100%</span>
+              </div>
+
+              <div class="app-header">
+                <div>
+                  <small>Hola Felipe</small>
+                  <h3>¿Qué necesitas hoy?</h3>
+                </div>
+                <div class="avatar"></div>
+              </div>
+
+              <div class="search-bar">Buscar servicio...</div>
+
+              <div class="service-grid">
+                <div class="service-box">
+                  <div class="icon-circle">H</div>
+                  <div>
+                    <h4>Limpieza hogar</h4>
+                    <p>Casas y apartamentos</p>
+                  </div>
+                </div>
+
+                <div class="service-box">
+                  <div class="icon-circle">O</div>
+                  <div>
+                    <h4>Limpieza oficina</h4>
+                    <p>Espacios de trabajo</p>
+                  </div>
+                </div>
+
+                <div class="service-box">
+                  <div class="icon-circle">S</div>
+                  <div>
+                    <h4>Sofas y tapetes</h4>
+                    <p>Limpieza profunda</p>
+                  </div>
+                </div>
+
+                <div class="service-box">
+                  <div class="icon-circle">E</div>
+                  <div>
+                    <h4>Limpieza express</h4>
+                    <p>Para hoy mismo</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="next-booking">
+                <small>Proxima reserva</small>
+                <h3>Manana · 9:00 AM</h3>
+                <p>Limpieza hogar · 2 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-bottom">
+            <small>Propuesta de valor</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- <section id="problema">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">Por que Fazi</span>
+        <h2 class="section-title">Pedir limpieza todavia se siente mas complicado de lo que deberia.</h2>
+        <p class="section-subtitle">
+          Muchas personas terminan escribiendo por WhatsApp, preguntando en grupos y esperando
+          respuesta. Fazi busca convertir eso en una experiencia simple, clara y rapida.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <article class="problem-card">
+          <div class="icon-circle">1</div>
+          <h3>Busqueda desordenada</h3>
+          <p>Hoy toca buscar contactos, pedir referencias y escribirle a varias personas antes de encontrar disponibilidad.</p>
+        </article>
+
+        <article class="problem-card">
+          <div class="icon-circle">2</div>
+          <h3>Poca claridad</h3>
+          <p>No siempre es facil saber precio, horario o si el servicio realmente se ajusta a lo que necesitas.</p>
+        </article>
+
+        <article class="problem-card">
+          <div class="icon-circle">3</div>
+          <h3>Demasiada friccion</h3>
+          <p>Coordinar limpieza no deberia sentirse como una tarea extra. Deberia ser abrir una app, reservar y listo.</p>
+        </article>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="beneficios">
+    <div class="container">
+      <div class="section-heading">
+        <h2 class="section-title">Todo lo que necesitas para decidir rápido y reservar con confianza.</h2>
+        <p class="section-subtitle">
+          Fazi está pensada para hogares, oficinas pequeñas y personas ocupadas que valoran una experiencia simple y confiable.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon-circle">R</div>
+          <h3>Reserva en minutos</h3>
+          <p>Escoges tipo de servicio, fecha y hora sin perder tiempo buscando contactos o cruzando mensajes.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">C</div>
+          <h3>Personal confiable</h3>
+          <p>La promesa de Fazi es reducir incertidumbre con perfiles claros, proceso ordenado y mejor experiencia de confianza.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon-circle">F</div>
+          <h3>Flexible para tu rutina</h3>
+          <p>Ya sea un apartamento, una oficina o una limpieza express, la idea es que puedas ajustarlo a tu horario.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-kicker">Cómo funciona</span>
+        <h2 class="section-title">Una experiencia simple desde el primer clic hasta la reserva.</h2>
+        <p class="section-subtitle">
+          Todo el flujo está pensado para que reservar limpieza se sienta tan fácil como pedir cualquier otro servicio desde el celular.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-number">1</div>
+          <h3>Elige el lugar</h3>
+          <p>Selecciona si necesitas limpieza para tu hogar, oficina o un servicio específico.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">2</div>
+          <h3>Escoge horario</h3>
+          <p>Encuentra una opción que encaje con tu día y evita coordinar por chat durante horas.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">3</div>
+          <h3>Confirma fácil</h3>
+          <p>Visualiza opciones claras y confirma tu reserva en pocos pasos desde el celular.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-number">4</div>
+          <h3>Recibe el servicio</h3>
+          <p>Tu espacio queda limpio sin llamadas, sin estrés y con una experiencia mucho más simple.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="beta">
+    <div class="container">
+      <div class="newsletter">
+        <h2>Quiero enterarme cuando Fazi esté disponible</h2>
+        <p>
+          Déjanos tu correo y te avisaremos cuando lancemos Fazi, junto con novedades y acceso anticipado a nuevas funcionalidades.
+        </p>
+
+        <form class="newsletter-form" id="waitlist-form">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Ingresa tu correo"
+            autocomplete="email"
+            required
+          >
+          <button class="btn-inline" type="submit" id="submit-button">Quiero enterarme primero</button>
+        </form>
+
+        <p class="microcopy">
+          Solo usaremos tu correo para avisarte sobre el lanzamiento y novedades de Fazi.
+        </p>
+        <div class="form-feedback" id="form-feedback" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#top">Inicio</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#beta">Lanzamiento</a>
+    </div>
+    <p>© 2026 Fazi.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+
+    const form = document.getElementById("waitlist-form");
+    const emailInput = document.getElementById("email");
+    const submitButton = document.getElementById("submit-button");
+    const feedback = document.getElementById("form-feedback");
+    const clickTargets = document.querySelectorAll("[data-track-click]");
+    const phoneCluster = document.querySelector(".phone-cluster");
+    const cursorRing = document.getElementById("cursor-ring");
+
+    function getUtmParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        source: params.get("utm_source"),
+        medium: params.get("utm_medium"),
+        campaign: params.get("utm_campaign"),
+        content: params.get("utm_content"),
+        term: params.get("utm_term")
+      };
+    }
+
+    function setFeedback(message, type) {
+      feedback.textContent = message;
+      feedback.className = "form-feedback" + (type ? " " + type : "");
+    }
+
+    function trackEvent(name, params = {}) {
+      if (typeof window.gtag === "function") {
+        window.gtag("event", name, params);
+      }
+      if (typeof window.clarity === "function") {
+        window.clarity("event", name);
+      }
+    }
+
+    clickTargets.forEach((target) => {
+      target.addEventListener("click", () => {
+        trackEvent("cta_click", { cta_name: target.dataset.trackClick });
+      });
+    });
+
+    if (phoneCluster && cursorRing) {
+      phoneCluster.addEventListener("mouseenter", () => {
+        cursorRing.classList.add("is-visible");
+      });
+
+      phoneCluster.addEventListener("mouseleave", () => {
+        cursorRing.classList.remove("is-visible");
+      });
+
+      phoneCluster.addEventListener("mousemove", (event) => {
+        const bounds = phoneCluster.getBoundingClientRect();
+        cursorRing.style.left = event.clientX - bounds.left + "px";
+        cursorRing.style.top = event.clientY - bounds.top + "px";
+      });
+    }
+
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "landing_view", {
+        page_path: window.location.pathname,
+        page_title: document.title
+      });
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const email = emailInput.value.trim().toLowerCase();
+      if (!email) {
+        setFeedback("Ingresa un correo valido para recibir noticias de Fazi.", "error");
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Enviando...";
+      setFeedback("");
+
+      const utms = getUtmParams();
+      trackEvent("waitlist_submit_attempt", {
+        source: utms.source || "direct",
+        medium: utms.medium || "none",
+        campaign: utms.campaign || "none"
+      });
+
+      try {
+        const payload = {
+          email,
+          source: utms.source,
+          medium: utms.medium,
+          campaign: utms.campaign,
+          content: utms.content,
+          term: utms.term,
+          landing_path: window.location.pathname,
+          user_agent: navigator.userAgent
+        };
+
+        const { error } = await supabaseClient
+          .from(FAZI_CONFIG.supabaseTable)
+          .insert(payload);
+
+        if (error) {
+          throw error;
+        }
+
+        trackEvent("waitlist_signup_success", {
+          source: utms.source || "direct",
+          medium: utms.medium || "none",
+          campaign: utms.campaign || "none"
+        });
+
+        form.reset();
+        setFeedback("Listo. Te avisaremos cuando Fazi esté disponible.", "success");
+      } catch (error) {
+        console.error(error);
+        trackEvent("waitlist_signup_error");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Quiero enterarme primero";
+      }
+    });
+  </script>
+</body>
+</html>
